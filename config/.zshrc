@@ -24,4 +24,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 
 #  Fastfetch
-fastfetch
+fastfetch --kitty-direct $HOME/necromancy-dotfiles/assets/carnifex-terminal.png
