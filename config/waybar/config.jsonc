@@ -190,7 +190,7 @@
     },
 
     "clock": {
-        "timezone": "Asia/Tehran",
+        "timezone": "America/Kentucky/Louisville",
         "format": "  {:%H:%M}",
         "tooltip": true,
         "on-click": "setbg",

@@ -5,6 +5,10 @@
       "binaryPrefix": "jedec"
     }
   },
+  "logo": {
+	"type": "auto",
+	"source": "~/necromancy-dotfiles/assets/carnifex-terminal.png"
+  },
   "modules": [
     "title",
     "separator",
@@ -15,17 +19,18 @@
     "packages",
     "shell",
     "display",
-    "de",
     "wm",
     "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
+    //"font", this module is displaying incorrect font, probably due to theme issue
+    //"cursor",
     "terminal",
     "terminalfont",
     "cpu",
-    "gpu",
+    {
+	"type": "gpu",
+	"hideType": "integrated",
+	"format": "{1} {2}"
+    },
     "memory",
     "swap",
     "disk",
