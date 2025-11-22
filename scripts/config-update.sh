@@ -29,4 +29,4 @@ cp ~/.config/swww/swww.sh ~/necromancy-dotfiles/config/swww
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating systemd config...($COUNT/$PACKAGES)"
-cp -rv ~/.config/systemd/ ~/necromancy-dotfiles/config/
+cp -r ~/.config/systemd/ ~/necromancy-dotfiles/config/
