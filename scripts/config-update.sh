@@ -30,3 +30,10 @@ cp ~/.config/swww/swww.sh ~/necromancy-dotfiles/config/swww
 
 echo -e "${GREEN}==>${NOCOLOR} Updating systemd config...($COUNT/$PACKAGES)"
 cp -r ~/.config/systemd/ ~/necromancy-dotfiles/config/
+
+echo -e "${GREEN}==== Config Update Success! ===="
+
+echo -e "${GREEN}==>${NOCOLOR} Updating sddm..."
+# Sudo is required here because these are system-level folders
+sudo cp -a /usr/share/sddm/themes/necromancy/. ~/necromancy-dotfiles/config/sddm/themes/necromancy/
+sudo cp /etc/sddm.conf.d/necromancy.conf ~/necromancy-dotfiles/config/sddm
