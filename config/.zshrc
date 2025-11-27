@@ -20,8 +20,9 @@ prompt fire green cyan green white white white
 
 # Extensions/Plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#106d70'
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #  Fastfetch
 fastfetch --kitty-direct $HOME/necromancy-dotfiles/assets/carnifex-terminal.png
