@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 GREEN='\033[0;32m'
 NOCOLOR='\033[0m'
-PACKAGES=8
+PACKAGES=9
 COUNT=1
 
 echo -e "${GREEN}==>${NOCOLOR} Updating waybar config... ($COUNT/$PACKAGES)"
-cp -r ~/.config/waybar/ ~/necromancy-dotfiles/config/
+cp -a ~/.config/waybar/. ~/necromancy-dotfiles/config/waybar
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating zsh config...($COUNT/$PACKAGES)"
@@ -17,19 +17,22 @@ cp ~/.config/fastfetch/config.jsonc ~/necromancy-dotfiles/config/fastfetch
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating hyprland config...($COUNT/$PACKAGES)"
-cp -r ~/.config/hypr ~/necromancy-dotfiles/config/
+cp -a ~/.config/hypr/. ~/necromancy-dotfiles/config/hypr
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating kitty config...($COUNT/$PACKAGES)"
-cp -r ~/.config/kitty ~/necromancy-dotfiles/config/
+cp -a ~/.config/kitty/. ~/necromancy-dotfiles/config/kitty/
 ((COUNT++))
+
+echo -e "${GREEN}==>${NOCOLOR} Updating nvim config...($COUNT/$PACKAGES)"
+cp -a ~/.config/nvim/. ~/necromancy-dotfiles/config/nvim/
 
 echo -e "${GREEN}==>${NOCOLOR} Updating swww config...($COUNT/$PACKAGES)"
 cp ~/.config/swww/swww.sh ~/necromancy-dotfiles/config/swww
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating systemd config...($COUNT/$PACKAGES)"
-cp -r ~/.config/systemd/ ~/necromancy-dotfiles/config/
+cp -a ~/.config/systemd/. ~/necromancy-dotfiles/config/systemd
 ((COUNT++))
 
 echo -e "${GREEN}==>${NOCOLOR} Updating walker config...($COUNT/$PACKAGES)"

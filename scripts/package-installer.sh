@@ -27,3 +27,6 @@ case $input in
 	n|N) echo "\nSkipping additional elephant providerlists..." ;;
 	*) echo "\nInvalid input, skipping additional providerlists..." ;;
 esac
+
+echo "Installing AGS Framework..."
+yay -S aylurs-gtk-shell-git
