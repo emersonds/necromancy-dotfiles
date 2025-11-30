@@ -42,3 +42,4 @@ All packages can be installed with `package-installer.sh` in the scripts folder.
 - [ ] Theme walker to match other applications.
 - [ ] Display currently playing song in waybar with Mopidy and mpd.
 - [ ] Update cursor theme and app icons.
+- [ ] Create a bash script to automate updating local configs with git configs.

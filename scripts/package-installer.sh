@@ -18,6 +18,9 @@ fi
 echo "Installing terminal packages..."
 yay -S kitty lsd fastfetch zsh zsh-autosuggestions zsh-syntax-highlighting
 
+echo "Installing NeoVim. Config located in necromancy-dotfiles/config..."
+yay -S neovim
+
 echo "Installing walker and elephant with basic provider lists..."
 yay -S walker elephant elephant-providerlist elephant-desktopapplications elephant-archlinuxpkgs elephant-files
 
@@ -28,5 +31,5 @@ case $input in
 	*) echo "\nInvalid input, skipping additional providerlists..." ;;
 esac
 
-echo "Installing AGS Framework..."
-yay -S aylurs-gtk-shell-git
+# echo "Installing AGS Framework..."
+# yay -S aylurs-gtk-shell-git
