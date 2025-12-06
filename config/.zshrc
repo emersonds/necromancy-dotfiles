@@ -25,4 +25,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#106d70'
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #  Fastfetch
-fastfetch --kitty-direct $HOME/necromancy-dotfiles/assets/carnifex-terminal.png
+#fastfetch --kitty-direct $HOME/necromancy-dotfiles/assets/carnifex-terminal.png
+fastfetch

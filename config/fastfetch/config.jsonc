@@ -7,7 +7,7 @@
   },
   "logo": {
 	"type": "auto",
-	"source": "~/necromancy-dotfiles/assets/carnifex-terminal.png"
+	"source": "~/necromancy-dotfiles/assets/carnifex-terminal-transparent.png"
   },
   "modules": [
     "title",
