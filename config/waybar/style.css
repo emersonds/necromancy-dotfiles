@@ -20,6 +20,7 @@
 */
 
 /* Colors (dracula) */
+/*)
 @define-color foreground	#f8f8f2;
 @define-color background	rgba(40, 42, 54, 0.5);
 @define-color orange	#ffb86c;
@@ -40,19 +41,31 @@
 @define-color brblue #6272a4;
 @define-color brpurple #d6acff;
 @define-color brpink #ff92df;
+*/
+
+/* Colors (Pywal w/ handpicked accents) */
+@define-color foreground #99e0dd;
+@define-color background rgba(18, 10, 19, 0.25);
+@define-color green #148d79;
+@define-color blue #105970;
+@define-color cyan #05ffde;
+@define-color magenta #794377;
+@define-color brmagenta #c04abc;
+@define-color white #ffffff;
+@define-color black #120a13;
 
 @define-color arch_blue #89b4fa;
 
 @define-color workspace_background	@background;
 @define-color workspace_button	@foreground;
 @define-color workspace_active	@black;
-@define-color workspace_active_background	@green;
+@define-color workspace_active_background	@cyan;
 @define-color workspace_urgent	@white;
-@define-color workspace_urgent_background	@brred;
+@define-color workspace_urgent_background	@brmagenta;
 @define-color workspace_hover	@black;
-@define-color workspace_hover_background	@pink;
-@define-color critical	@red;
-@define-color warning	@yellow;
+@define-color workspace_hover_background	@blue;
+@define-color critical	@brmagenta;
+@define-color warning	@magenta;
 
 
 @keyframes blink {
@@ -67,7 +80,7 @@
     border-radius: 0;
     font-family: "IosevkaTermSlabNerdFont";
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     min-height: 0;
 }
 
@@ -94,10 +107,6 @@ window#waybar {
     background: @workspace_active_background;
     color: @workspace_active;
     border-radius: 5px;
-/*
-    border-top: 2px solid @pink;
-    border-bottom: 2px solid @pink;
-*/
 }
 
 #workspaces button.urgent {
@@ -124,14 +133,14 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @purple;
+    border-color: @brmagenta;
 }
 
 tooltip label{
-    color: @grey;
+    color: @blue;
 }
 
-#custom-rofi,
+#custom-walker,
 #custom-lock_screen,
 #custom-power,
 #custom-weather,
@@ -191,13 +200,13 @@ tooltip label{
     animation-direction: alternate;
 }
 
-#custom-rofi {
+#custom-walker {
     color: @arch_blue;
     border-radius: 5px 0px 0px 5px;
 }
 
 #custom-power {
-    color: @red;
+    color: @brmagenta;
     border-radius: 0px 5px 5px 0px;
 }
 
