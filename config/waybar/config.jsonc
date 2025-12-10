@@ -193,8 +193,25 @@
         "timezone": "America/Kentucky/Louisville",
         "format": "  {:%H:%M}",
         "tooltip": true,
-        "on-click": "setbg",
-        "tooltip-format": "{: %A, %B %e %Y}"
+        /*"on-click": "setbg",*/
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 4,
+            "weeks-pos":  "", /*Empty so "W01 W02 W03" is not displayed in the calendar.*/
+            "on-scroll":  1,
+            "format": {
+                "months": "<span color='#05ffde'><b>{}</b></span>",
+                "days": "<span color='#99e0dd'><b>{}</b></span>",
+                "weekdays": "<span color='#105970'><b>{}</b></span>",
+                "today": "<span color='#c04abc'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
 
    "hyprland/language": {
