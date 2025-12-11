@@ -38,7 +38,7 @@
     ],
 
     "custom/walker": {
-        "format": "",
+        "format": "",
         "on-click": "walker",
         "tooltip": false
     },
