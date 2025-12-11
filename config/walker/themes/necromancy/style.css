@@ -1,16 +1,16 @@
-@define-color window_bg_color #1f1f28;
-@define-color accent_bg_color #54546d;
-@define-color theme_fg_color #f2ecbc;
-@define-color error_bg_color #C34043;
-@define-color error_fg_color #DCD7BA;
+@define-color window_bg_color rgba(24, 33, 35, 1);
+@define-color accent_bg_color #05ffde;
+@define-color theme_fg_color #99e0dd;
+@define-color error_bg_color #c04abc;
+@define-color error_fg_color #d6acff;
 
 * {
   all: unset;
 }
 
 popover {
-  background: lighter(@window_bg_color);
-  border: 1px solid darker(@accent_bg_color);
+  background: darker(@window_bg_color);
+  border: 1px solid lighter(@accent_bg_color);
   border-radius: 18px;
   padding: 10px;
 }
@@ -48,6 +48,7 @@ scrollbar {
 
 .search-container {
   border-radius: 10px;
+  font-family: "IosevkaTermSlabNerdFont";
 }
 
 .input placeholder {
@@ -88,6 +89,7 @@ child {
 .item-box {
   border-radius: 10px;
   padding: 10px;
+  font-family: "IosevkaTermSlabNerdFont";
 }
 
 .item-quick-activation {
@@ -102,9 +104,11 @@ child:selected .item-box {
 }
 
 .item-text-box {
+  font-family: "IosevkaTermSlabNerdFont";
 }
 
 .item-subtext {
+  font-family: "IosevkaTermSlabNerdFont";
   font-size: 12px;
   opacity: 0.5;
 }
@@ -126,6 +130,7 @@ child:selected .item-box {
 }
 
 .calc .item-text {
+  font-family: "IosevkaTermSlabNerdFont";
   font-size: 24px;
 }
 
