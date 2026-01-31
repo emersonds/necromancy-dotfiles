@@ -9,6 +9,12 @@
     <a href="#-roadmap">Roadmap</a> ༓
 </p>
 
+## Showcase
+
+![Empty workspace](https://github.com/emersonds/necromancy-dotfiles/blob/main/assets/examples/Empty-Desktop.png "Empty Workspace")
+![Minimal example of neovim, kitty, and walker](https://github.com/emersonds/necromancy-dotfiles/blob/main/assets/examples/Kitty-Walker-Nvim.png "Neovim, Kitty, and Walker")
+![Busy workspace example](https://github.com/emersonds/necromancy-dotfiles/blob/main/assets/examples/Example-Workspace.png "Productivity Workspace Example")
+
 ## Features
 
 - Dark, gritty theme with vibrant greens, blue undertones, and purple accents
