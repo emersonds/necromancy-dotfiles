@@ -34,6 +34,8 @@
 - NeoVim: Text Editor.
 - Kitty terminal with zsh shell.
 - Fastfetch.
+- Eww: Widgets.
+- SwayNC: Notification daemon.
 
 All packages can be installed with `package-installer.sh` in the scripts folder.
 
