@@ -1,0 +1,42 @@
+; Remember to `eww daemon` if this is not in hypr config
+; Default config located at /etc/xdg/eww
+; https://elkowar.github.io/eww/configuration.html
+
+(defwindow example
+    :monitor 0
+    ; geometry properties can be in px or %
+    :geometry (geometry :x "0%"  ; x, y are relative to anchor
+        :y "5px"
+        :width "70%"
+        :height "30px"
+        ; anchor can be center or combinations of:
+        ; top, center, bottom and left, center, right
+        :anchor "top center")
+    ; Where window should appear in window stack
+    :stacking "fg"   ; Can be fg, bg, overlay, or bottom
+    ; Should compositor (wayland) reserve space automatically
+    ; X11 equivalent is :reserve (struts :distance :side)
+    :exclusive true
+    ; Set the wayland layersurface namespace eww uses.
+    ; X11 equivalent is windowtype
+    :namespace ""
+    ; If window should be able to be focused, primarily if keyboard needs to work
+    ; Wiki says possible values are "none, exclusive, ondemand",
+    ; but window will not open & eww throws an error if not true or false
+    ; Worth noting setting this to true broke Hyprland's ability to change focus
+    :focusable false
+    (greeter :text "Say hello!"
+        :name "Dylan"))
+
+
+; Greeter widget takes two attributes, "?text" AND "name"
+; The "?" in "?text" makes that text attribute optional and will be "" if not provided
+(defwidget greeter [?text name]
+    ; box is used as the "body" of a widget
+    ; Used to align the widget and set attributes
+    (box :orientation "horizontal"
+        :halign "center"
+        text    ; ?text attribute from declaration
+        ; Button calls notify-send (swaync) and is labelled "Greet"
+        (button :onclick "notify-send 'Hello' 'Hello, ${name}'"
+        "Greet")))

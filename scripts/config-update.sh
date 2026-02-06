@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 GREEN='\033[0;32m'
 NOCOLOR='\033[0m'
-PACKAGES=9
+PACKAGES=11
 COUNT=1
 
 echo -e "${GREEN}==>${NOCOLOR} Updating waybar config... ($COUNT/$PACKAGES)"
@@ -37,6 +37,18 @@ cp -a ~/.config/systemd/. ~/necromancy-dotfiles/config/systemd
 
 echo -e "${GREEN}==>${NOCOLOR} Updating walker config...($COUNT/$PACKAGES)"
 cp -a ~/.config/walker/. ~/necromancy-dotfiles/config/walker/
+((COUNT++))
+
+echo -e "${GREEN}==>${NOCOLOR} Updating elephant config...($COUNT/$PACKAGES)"
+cp -a ~/.config/elephant/. ~/necromancy-dotfiles/config/elephant/
+((COUNT++))
+
+echo -e "${GREEN}==>${NOCOLOR} Updating eww config...($COUNT/$PACKAGES)"
+cp -a ~/.config/eww/. ~/necromancy-dotfiles/config/eww/
+((COUNT++))
+
+echo -e "${GREEN}==>${NOCOLOR} Updating swaync config...($COUNT/$PACKAGES)"
+cp -a ~/.config/swaync/. ~/necromancy-dotfiles/config/swaync/
 
 echo -e "${GREEN}==== Config Update Success! ===="
 
