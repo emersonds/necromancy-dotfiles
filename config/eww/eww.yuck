@@ -22,9 +22,9 @@
          :halign "center"
          :valign "center"
          :spacing 40
-            (button :style "color: #d731ddff;" :class "shutdown" :onleftclick "systemctl poweroff" "⏻")
-            (button :style "color: #1922a0ff;" :class "reboot" :onrightclick "systemctl reboot" "")
-            (button :style "color: #631d1dff;" :class "logout" :onrightclick "hyprctl dispatchexit" "󰍃")))
+            (button :style "color: #d731ddff;" :class "shutdown" :onclick "systemctl poweroff" "⏻")
+            (button :style "color: #1922a0ff;" :class "reboot" :onclick "systemctl reboot" "")
+            (button :style "color: #631d1dff;" :class "logout" :onclick "hyprctl dispatchexit" "󰍃")))
 
 
 ;;;; EXAMPLE FROM EWW DOCS
