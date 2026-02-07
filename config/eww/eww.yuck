@@ -1,3 +1,34 @@
+;;;; POWER MENU
+
+; Power menu window
+(defwindow powermenu
+    :monitor 0
+    :exclusive false
+    :focusable false
+    :stacking "fg"
+    :namespace "power-menu"
+    :geometry (geometry :x "10px"
+                        :y "0%"
+                        :width "10%"
+                        :height "6%"
+                        :anchor "top right")
+    (powermenu))
+
+; Power menu widget
+(defwidget powermenu []
+    (box :orientation "h"
+         :space-evenly false
+         :class "powermenu"
+         :halign "center"
+         :valign "center"
+         :spacing 40
+            (button :style "color: #d731ddff;" :class "shutdown" :onleftclick "systemctl poweroff" "⏻")
+            (button :style "color: #1922a0ff;" :class "reboot" :onrightclick "systemctl reboot" "")
+            (button :style "color: #631d1dff;" :class "logout" :onrightclick "hyprctl dispatchexit" "󰍃")))
+
+
+;;;; EXAMPLE FROM EWW DOCS
+
 ; Remember to `eww daemon` if this is not in hypr config
 ; Default config located at /etc/xdg/eww
 ; https://elkowar.github.io/eww/configuration.html
@@ -14,7 +45,7 @@
         :anchor "top center")
     ; Where window should appear in window stack
     :stacking "fg"   ; Can be fg, bg, overlay, or bottom
-    ; Should compositor (wayland) reserve space automatically
+    ; Should compositor (wayland) reserve space automatically. Can be true/false
     ; X11 equivalent is :reserve (struts :distance :side)
     :exclusive true
     ; Set the wayland layersurface namespace eww uses.
