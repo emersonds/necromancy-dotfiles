@@ -45,7 +45,7 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "sysact",
+        "on-click": "eww open --toggle powermenu",
         "tooltip": false
     },
 
